@@ -9,14 +9,14 @@ var:
   tags_path : /tags.html
   rss_path: /atom.xml
 
-production_url : http://username.github.com # or your custom domain name
-title : Jekyll Bootstrap
+production_url : http://limonade-php.github.com # or your custom domain name
+title : Limonade PHP
 
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
+  name : Fabrice Luraine
+  email : limonade@asciiland.net
+  github : 16
+  twitter : deerweb
   feedbuder : feedname
 
 exclude: .rbenv-version

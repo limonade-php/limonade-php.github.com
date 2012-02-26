@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Limonade - PHP micro-framework</title>
+	<meta name="generator" content="Vim + Jekyll">
+	<meta name="author" content="Fabrice Luraine">
+
+  <link rel="stylesheet" href="{{ theme_asset_path }}/css/blueprint/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="{{ theme_asset_path }}/css/blueprint/print.css" type="text/css" media="print"> 
+  <!--[if IE]>
+    <link rel="stylesheet" href="{{ theme_asset_path }}/css/blueprint/ie.css" type="text/css" media="screen, projection">
+  <![endif]-->
+  <link rel="stylesheet" href="{{ theme_asset_path }}/css/screen.css" type="text/css" media="screen, projection">
+  <link rel="shortcut icon" href="{{ theme_asset_path }}/favicon.ico">
+  <link rel="apple-touch-icon" href="{{ theme_asset_path }}/apple-touch-icon.png">
+</head>
+<body>
+  <div id="header">
+    <h1>Limonade</h1>
+    <p>a PHP micro-framework</p>
+  </div>
+  
+  <div id="content">
+    
+    <h1>About Limonade</h1>
+    
+    <p>Limonade is a PHP micro framework for rapid web development and prototyping.</p>
+
+    <p>It&#8217;s inspired by frameworks like <a
+      href="http://www.sinatrarb.com/">Sinatra</a> or <a
+      href="https://github.com/camping/camping">Camping</a> in Ruby, or <a href="http://orbit.luaforge.net/">Orbit</a> in Lua. It aims to be simple, lightweight and extremly flexible.</p>
+    
+    <h2>As simple as that...</h2>
+<pre><code>
+require_once 'vendors/limonade.php';
+dispatch('/', 'hello');
+  function hello()
+  {
+      return 'Hello world!';
+  }
+run();
+</code></pre>
+    <h2>Installation</h2>
+    <ul>
+    <li>Download the <a href="http://github.com/sofadesign/limonade/downloads">lastest stable version</a></li>
+    <li>copy the <code>lib</code> folder content in your project (probably in a <code>lib/</code> directory or in <code>vendors/</code>)</li>
+    <li>add <code>require_once vendors/limonade.php</code> (or <code>require_once lib/limonade.php</code>) at the begining of your application main php file</li>
+    <li>read the <a
+      href="https://github.com/sofadesign/limonade/blob/master/README.mkd">README</a> file, 
+      look at <a
+        href="https://github.com/sofadesign/limonade/wiki/Examples-and-tutorials">examples</a>… and have fun!</li>
+    </ul>
+    
+    <h2>Usage and documentation</h2>
+    <ul>
+      <li><a
+        href="https://github.com/sofadesign/limonade/blob/master/README.mkd">README</a>
+      (<a
+        href="https://github.com/sofadesign/limonade/blob/master/README.mkd">en</a>
+      - <a
+        href="https://github.com/sofadesign/limonade/blob/master/LISEZMOI.mkd">fr</a>)</li>
+      <li><a
+        href="https://github.com/sofadesign/limonade/wiki/Examples-and-tutorials">Examples and tutorials</a></li>
+      <li><a href="http://github.com/sofadesign/limonade/">Source code</a> (finaly the best documentation)</li>
+    </ul>
+    
+    <h2>Contributing</h2>
+    <ol>
+    <li><a href="http://help.github.com/forking/">Fork</a> Limonade</li>
+    <li>Work on the master branch or create a topic branch (&nbsp;<code>git checkout -b my_branch</code>&nbsp;)</li>
+    <li>Push to master branch or your branch (&nbsp;<code>git push origin my_branch</code>&nbsp;)</li>
+    <li>If necessary, create an <a href="http://sofadesign.lighthouseapp.com/projects/29612-limonade/overview">issue</a> with a link to your branch</li>
+    <li>Or share your ideas on the <a href="http://groups.google.fr/group/limonade">discussion group</a>!</li>
+    </ol>
+    <p>Before pushing your code, please test it, or better,
+      write <a href="http://github.com/sofadesign/limonade/tree/master/tests/">tests</a> 
+      (and check that everything works fine by running from the limonade 
+      <code>code/</code> directory: <code>php -f tests/all.php</code> )</p>
+    
+    <h2>More on Limonade</h2>
+    <ul>
+      <li><a href="http://sofadesign.lighthouseapp.com/projects/29612-limonade/overview">Bug report</a></li>
+      <li><a href="http://groups.google.fr/group/limonade">Support / Discussions</a></li>
+      <li><a href="http://limonade.tumblr.com">Blog</a></li>
+      <li><a
+        href="https://github.com/sofadesign/limonade/wiki/Talking-about-Limonade-on-the-web">Links</a></li>
+    </ul>
+    <p><a href="http://twitter.com/limonadephp" id="twitter-link">Follow
+      Limonade on Twitter</a></p>    
+  </div>
+  
+  <div id="footer">
+    <p><small>© 2012 <a href="https://twitter.com/#!/deerweb">Fabrice
+        Luraine</a> / Design and logo by <a href="http://www.minimau.com">Minimau</a></small></p>
+  </div>
+  
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-1022900-10");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</body>
+</html>
